@@ -1,0 +1,42 @@
+{
+  "name": "seedly",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": ">=1.2.*",
+    "json3": "~3.3.1",
+    "es5-shim": "~3.0.1",
+    "bootstrap-sass-official": "~3.1.1",
+    "bootstrap": "~3.1.1",
+    "angular-resource": ">=1.2.*",
+    "angular-cookies": ">=1.2.*",
+    "angular-sanitize": ">=1.2.*",
+    "angular-bootstrap": "~0.11.0",
+    "font-awesome": ">=4.1.0",
+    "lodash": "~2.4.1",
+    "angular-socket-io": "~0.6.0",
+    "angular-ui-router": "~0.2.15",
+    "angular-payments": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": ">=1.2.*",
+    "angular-scenario": ">=1.2.*"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "vendor/assets/javascripts/bootstrap/affix.js",
+        "vendor/assets/javascripts/bootstrap/alert.js",
+        "vendor/assets/javascripts/bootstrap/button.js",
+        "vendor/assets/javascripts/bootstrap/carousel.js",
+        "vendor/assets/javascripts/bootstrap/collapse.js",
+        "vendor/assets/javascripts/bootstrap/dropdown.js",
+        "vendor/assets/javascripts/bootstrap/tab.js",
+        "vendor/assets/javascripts/bootstrap/transition.js",
+        "vendor/assets/javascripts/bootstrap/scrollspy.js",
+        "vendor/assets/javascripts/bootstrap/modal.js",
+        "vendor/assets/javascripts/bootstrap/tooltip.js",
+        "vendor/assets/javascripts/bootstrap/popover.js"
+      ]
+    }
+  }
+}

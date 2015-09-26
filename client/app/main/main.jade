@@ -1,0 +1,85 @@
+div.mainup
+  div(ng-include='"components/navbar/navbarfront.html"')
+
+  header#banner.hero-unit
+    .container
+      .row#banner-new
+        .col-sm-12
+          h1 subbly.tv
+          h4 Subscribe to bubbles and watch original shows.
+          a(href='/discover')
+            button.btn.btn-default.btn-lg
+              | Discover Bubbles
+
+.container.mainbg
+  .row(style='padding:20px; color:#333333')
+    .col-sm-4.center
+      h3
+        span.glyphicon.glyphicon-search.pad-right-sm
+        | Discover
+      p
+        | Discover upcoming bubbles and shows
+    .col-sm-4.center
+      h3
+        span.glyphicon.glyphicon-heart.pad-right-sm
+        | Subscribe
+      p
+        | Subscribe to bubble production of shows
+    .col-sm-4.center
+      h3
+        span.glyphicon.glyphicon-play.pad-right-sm
+        | Watch
+      p
+        | Watch videos on-site and ad-free
+  hr
+  .row(style='padding-left:50px; padding-right:50px')
+    .col-sm-4
+      .row
+        h1
+          | Popular Bubbles
+      .row
+        a(href='/discover')
+          p
+            | Discover more bubbles
+    .col-sm-8
+      .container(ng-repeat='bubble in bubbles', style='width:100%; border-radius:10px; background-color:white; margin-bottom: 50px; padding-left:0px; border-width:1px;border-style: solid;border-color:#EEEEEE')
+        .row
+          .col-sm-6
+            // TODO: make images fixed in size
+            img.img-fill.img-rounded(src='{{bubble.profilePictureURL}}', style='border-top-right-radius:0px; border-bottom-right-radius:0px;')
+          .col-sm-6
+            .row
+              h3
+                | {{bubble.name}}
+            .row
+              span(style='font-size:20px; font-weight:bold')
+                | {{bubble.subscriberCount}} 
+              span(style='size:11px')
+                | Subscribers
+            .row
+              span(style='font-size:20px; font-weight:bold')
+                | {{bubble.showCount}} 
+              span(style='size:11px')
+                | Shows
+            hr
+            .row
+              p
+                | {{bubble.tagline}}
+            .row
+              p
+                a(href='/bubble/{{bubble._id}}')
+                  button.btn.btn-default.btn-sm
+                    | View Bubble
+  hr
+  .row(style='padding:20px')
+    .col-sm-3
+    .col-sm-6.center
+      h1
+        | Why be Subbly?
+      p
+        | You instinctually crave original content and want to support the creators who make them.  Subbing your favorite creators and their videos supports their production, giving them the flexibility and resources to continue making high quality original content.
+      p
+        a(href='/about')
+          | Read more...
+
+div(ng-include='"components/footer/footerfront.html"')
