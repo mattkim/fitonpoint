@@ -18,8 +18,6 @@ function onConnect(socket) {
   });
 
   // Insert sockets below
-  require('../api/bubble/bubble.socket').register(socket);
-  require('../api/pitch/pitch.socket').register(socket);
 }
 
 module.exports = function (socketio) {
