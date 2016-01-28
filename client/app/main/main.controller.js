@@ -6,4 +6,4 @@ angular.module('seedlyApp')
     if($cookieStore.get('token')) {
       $scope.user = User.get();
     }
-  });
+ });
