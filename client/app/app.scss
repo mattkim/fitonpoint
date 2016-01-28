@@ -20,6 +20,25 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
     border-radius:5px;
 }
 
+.btn-no {
+    color: #333333;
+    background-color: white;
+    border-color: #cccccc;
+    border-radius:0px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.btn-round-right-sm {
+    color: #333333;
+    background-color: white;
+    border-color: #cccccc;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 .btn-circle {
     border-radius: 50%;
 }
@@ -80,8 +99,8 @@ $fa-font-path: "/bower_components/font-awesome/fonts";
 .footer {
     text-align: center;
     margin: 30px;
-    padding: 30px 0;
-    border-top: 1px solid #E5E5E5;
+    //padding: 30px 0;
+    //border-top: 1px solid #E5E5E5;
 }
 
 .table th, .table td { 

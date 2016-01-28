@@ -9,11 +9,29 @@
     letter-spacing: -1px;
 }
 
+#banner-content {
+    opacity: 1;
+}
+
 .hero-unit {
-    position: relative;
-    padding: 30px 15px;
+    height: 500px;
+    padding: 100px 15px;
     text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    //color:#EEEEEE;
-    //background-image: url(https://s3-us-west-1.amazonaws.com/pokipop/tvproductionstudio.jpg);
+    position: relative;
+    overflow: hidden;
+    color:#FFFFFF;
+    background: rgba(33,66,99,0.85);
+    //background-color: #999999;
+    //background: url();
+    //opacity: 0.5;
+}
+
+.hero-unit img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
 }

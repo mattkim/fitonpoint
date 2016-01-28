@@ -1,37 +1,43 @@
 div(ng-include='"components/navbar/navbar.html"')
 
 header#banner.hero-unit
+  img(src='https://d2pnn7clgn6qxc.cloudfront.net/assets/slider/washed-jeans-stack-ba914286bd29f71f44a879705faefd3e.jpg')
   .container
-    .row#banner-new
+    .row#banner-content
       .col-sm-12
-        h1 Startup
-        h4 This is how you startup.
-        a(href='#')
-          button.btn.btn-default.btn-lg
-            | Do it now!
-hr
+        //.img(src='http://anf.scene7.com/is/image/anf/anf-T-20150702-category-mens-lineup-v2')
 
-div
-  .row
-    .col-sm-4.center
-      h3
-        span.glyphicon.glyphicon-search.pad-right-sm
-        | Discover
-    .col-sm-4.center
-      h3
-        span.glyphicon.glyphicon-heart.pad-right-sm
-        | Subscribe
-    .col-sm-4.center
-      h3
-        span.glyphicon.glyphicon-play.pad-right-sm
-        | Watch
-  hr
-  .row
-    .col-sm-3
-    .col-sm-6.center
-      h1
-        | Why Startup?
-      p
-        | Because you have to.
+        h1 Fitonpoint
+        br
+        h4 Find your perfect fit.
+        br
+        br
+        .row
+          .col-sm-4
+          .col-sm-4
+            // TODO: horizontally align bars
+            // TODO: make drop down disappear when I click elsewhere.
+            div.input-group
+              input.form-control(type='text', ng-model='searchbox.text', placeholder='Find your jeans')
+              div.input-group-btn(ng-class='{open: open}', style='color:black')
+                button.btn.btn-no.dropdown-toggle(type='button', data-toggle='dropdown', ng-click='open=!open')
+                  | All 
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#')
+                      | All
+                  li
+                    a(href='#')
+                      | Nudies
+                  li
+                    a(href='#')
+                      | Levis
+                  li
+                    a(href='#')
+                      | Seven
+                button.btn.btn-round-right-sm(type='submit')
+                  //span.glyphicon.glyphicon-search
+                  | Go!
 
 div(ng-include='"components/footer/footer.html"')
