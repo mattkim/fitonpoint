@@ -7,9 +7,9 @@ header#banner.hero-unit
       .col-sm-12
         //.img(src='http://anf.scene7.com/is/image/anf/anf-T-20150702-category-mens-lineup-v2')
 
-        h1 Fitonpoint
+        h1 Find your perfect fit
         br
-        h4 Find your perfect fit.
+        h4 Search our selection of the finest jeans to lookup and update fitting. 
         br
         br
         .row
@@ -19,6 +19,7 @@ header#banner.hero-unit
             // TODO: make drop down disappear when I click elsewhere.
             div.input-group
               input.form-control(type='text', ng-model='searchbox.text', placeholder='Find your jeans')
+              //input.form-control(type='text', ng-model='searchbox.text')
               div.input-group-btn(ng-class='{open: open}', style='color:black')
                 button.btn.btn-no.dropdown-toggle(type='button', data-toggle='dropdown', ng-click='open=!open')
                   | All 
@@ -36,7 +37,7 @@ header#banner.hero-unit
                   li
                     a(href='#')
                       | Seven
-                button.btn.btn-round-right-sm(type='submit')
+                button.btn.btn-round-right-sm(type='submit', style='background-color:rgb(247, 120, 107); color:white; border-color:rgb(247, 120, 107)')
                   //span.glyphicon.glyphicon-search
                   | Go!
 
